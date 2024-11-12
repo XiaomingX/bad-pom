@@ -1,0 +1,4 @@
+extraction:
+  java:
+    index:
+      xml_mode: all

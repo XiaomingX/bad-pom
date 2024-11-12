@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jlleitschuh.testing</groupId>
+  <artifactId>insecure-http-test</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+  <name>Security Testing</name>
+  <description>Used for vulnerability testing</description>
+  <distributionManagement>
+    <repository>
+      <id>insecure-releases</id>
+      <name>Insecure Repository Releases</name>
+      <url>http://insecure-repository.example</url>
+    </repository>
+    <snapshotRepository>
+        <id>insecure-snapshots</id>
+        <name>Insecure Repository Snapshots</name>
+        <url>http://insecure-repository.example</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <repositories>
+      <repository>
+        <id>insecure</id>
+        <name>Insecure Repository</name>
+        <url>http://insecure-repository.example</url>
+      </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+        <id>insecure-plugins</id>
+        <name>Insecure Repository Releases</name>
+        <url>http://insecure-repository.example</url>
+    </pluginRepository>
+  </pluginRepositories>
+</project>
